@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy · Hermes Gmail</title><link rel="stylesheet" href="../style.css"></head>
+<body><main>
+<h1>Privacy policy</h1>
+<p class="muted">Hermes Gmail · last updated 1 November 2026</p>
+<h2>Who operates it</h2>
+<p>Hermes Gmail is operated by Yao-Ting Huang for personal use. It runs on the owner's own computer as part of a local Hermes assistant and acts only on the owner's own Gmail account. It is not a public or multi-user service.</p>
+<h2>Google permissions</h2>
+<ul>
+<li><code>gmail.readonly</code>: used now, to read mail as described below.</li>
+<li><code>gmail.send</code> (optional, planned): requested for owner-approved sending and replies. This capability is not yet enabled. If it is configured, it will need separate Google consent, and every message will need the owner's approval of the exact recipients and content. The permission alone never authorizes the integration to send mail by itself.</li>
+</ul>
+<p>Hermes Gmail does not request <code>gmail.modify</code> or <code>gmail.compose</code>. It does not delete mail, change labels, archive messages or change read status. It does not create Gmail drafts. It does not request Calendar or Drive permissions.</p>
+<h2>Data accessed</h2>
+<ul>
+<li>Headers, message and thread bodies, and attachment metadata (for example file name, type and size) of new email.</li>
+<li>Short excerpts from a limited number of recent sent messages, used to match the owner's writing style.</li>
+<li>Selected older threads, read-only, only when the owner separately asks for calibration. Ordinary monitoring considers new email only.</li>
+</ul>
+<h2>How data is used</h2>
+<p>The data is used only to identify tasks that are relevant to the owner, to propose replies, and to send selected summaries of important mail and proposed reply text to the owner. Explicit feedback and preference rules from the owner, including example messages that the owner selects, are used to improve this triage for the owner.</p>
+<p>Hermes Gmail does not sell Google user data, does not use it for advertising, and does not use it to train generalized AI models.</p>
+<h2>Storage</h2>
+<p>The integration runs locally. On the owner's computer it stores:</p>
+<ul>
+<li>OAuth credentials, in files that only the owner can read;</li>
+<li>minimal triage records about processed messages;</li>
+<li>proposed reply drafts (stored locally, not in Gmail);</li>
+<li>preference rules that the owner provides.</li>
+</ul>
+<h2>Sharing and transfer</h2>
+<p>Email data is not kept only within Google and the owner's computer. It is transmitted to these services:</p>
+<ul>
+<li><strong>AI provider:</strong> selected message content and sent-message style excerpts go to the AI provider that the owner configured in Hermes, for inference.</li>
+<li><strong>Telegram:</strong> selected summaries and proposed reply text are delivered to the owner through Telegram.</li>
+</ul>
+<p>These providers handle the data they receive under their own terms, policies and the owner's account settings. Hermes Gmail makes no claim about their retention, logging or model-training practices. No Google user data is shared with any other party.</p>
+<p>This documentation site is static. It does not access Gmail and does not receive OAuth tokens or mail content from the integration.</p>
+<h2>Retention</h2>
+<p>Local records, proposed drafts and preference rules stay on the owner's computer until the owner deletes them. There is no automatic deletion schedule. Copies sent to the AI provider or Telegram are kept according to those services and the owner's settings there.</p>
+<h2>Owner controls</h2>
+<ul>
+<li>Revoke Google access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+<li>Disable local polling in Hermes to stop mail monitoring.</li>
+<li>Delete the local integration records, drafts, rules and credential files.</li>
+<li>Manage or delete copies on the AI provider and Telegram with the controls that those services provide.</li>
+</ul>
+<p>Revoking Google access does not automatically delete local records or messages already delivered to Telegram.</p>
+<h2>Google API Services User Data Policy</h2>
+<p>Hermes Gmail's use and transfer of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. This is a commitment by the operator, not a certification or a verified compliance status.</p>
+<h2>Contact</h2>
+<p>Questions or requests: Yao-Ting Huang, <a href="mailto:donason@gmail.com">donason@gmail.com</a>.</p>
+<nav><a href="index.html">Home</a> · <a href="terms.html">Terms of service</a></nav>
+</main></body></html>

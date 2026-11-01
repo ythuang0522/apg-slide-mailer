@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hermes Gmail</title><link rel="stylesheet" href="../style.css"></head>
+<body><main>
+<h1>Hermes Gmail</h1>
+<p class="muted">A personal Gmail integration for one owner's local Hermes assistant · last updated 1 November 2026</p>
+<p>Hermes Gmail is a local integration that its owner, Yao-Ting Huang, runs on their own computer as part of a personal Hermes assistant. It acts only on the owner's own Gmail account. It is not a public service and has no other users.</p>
+<h2>What it does</h2>
+<ul>
+<li>It reads new email in the owner's Gmail account, including headers, message and thread bodies, and attachment metadata, to identify tasks that are relevant to the owner.</li>
+<li>It proposes replies and sends selected summaries of important mail, and proposed reply text, to the owner through Telegram.</li>
+<li>It reads short excerpts of a limited number of recent sent messages so that proposed replies match the owner's writing style.</li>
+<li>When the owner asks, it can do a read-only review of selected older threads to calibrate its triage. Ordinary monitoring considers new email only.</li>
+</ul>
+<h2>Permissions</h2>
+<p>Hermes Gmail uses the Google <code>gmail.readonly</code> permission. Optional sending with the <code>gmail.send</code> permission is planned but is not yet enabled. If it is enabled, it will need separate Google consent, and each message will need the owner's approval of the exact recipients and content. It does not request permission to modify, label, archive, mark as read or delete mail, and it does not access Calendar or Drive.</p>
+<p>Selected message content is processed by the AI provider that the owner configured in Hermes, and selected summaries are delivered through Telegram. Details are in the privacy policy.</p>
+<p>This documentation site is static. It does not access Gmail and does not receive OAuth tokens or mail content from the integration.</p>
+<h2>Contact</h2>
+<p>Yao-Ting Huang · <a href="mailto:donason@gmail.com">donason@gmail.com</a></p>
+<nav><a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of service</a></nav>
+</main></body></html>

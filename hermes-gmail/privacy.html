@@ -8,8 +8,8 @@
 <p>Hermes Gmail is operated by Yao-Ting Huang for personal use. It runs on the owner's own computer as part of a local Hermes assistant and acts only on the owner's own Gmail account. It is not a public or multi-user service.</p>
 <h2>Google permissions</h2>
 <ul>
-<li><code>gmail.readonly</code>: used now, to read mail as described below.</li>
-<li><code>gmail.send</code> (optional, planned): requested for owner-approved sending and replies. This capability is not yet enabled. If it is configured, it will need separate Google consent, and every message will need the owner's approval of the exact recipients and content. The permission alone never authorizes the integration to send mail by itself.</li>
+<li><code>gmail.readonly</code>: used to read mail as described below. Mail monitoring and triage use only this read-only access and never send mail.</li>
+<li><code>gmail.send</code>: used only for owner-approved sending and replies. The owner granted this permission through Google consent. Every message needs the owner's approval of the exact recipients and content before it is sent. The permission alone never authorizes the integration to send mail by itself.</li>
 </ul>
 <p>Hermes Gmail does not request <code>gmail.modify</code> or <code>gmail.compose</code>. It does not delete mail, change labels, archive messages or change read status. It does not create Gmail drafts. It does not request Calendar or Drive permissions.</p>
 <h2>Data accessed</h2>
@@ -19,7 +19,7 @@
 <li>Selected older threads, read-only, only when the owner separately asks for calibration. Ordinary monitoring considers new email only.</li>
 </ul>
 <h2>How data is used</h2>
-<p>The data is used only to identify tasks that are relevant to the owner, to propose replies, and to send selected summaries of important mail and proposed reply text to the owner. Explicit feedback and preference rules from the owner, including example messages that the owner selects, are used to improve this triage for the owner.</p>
+<p>The data is used only to identify tasks that are relevant to the owner, to propose replies, and to send selected summaries of important mail and proposed reply text to the owner, and to send messages or replies from the owner's account only after the owner approves the exact recipients and content. Explicit feedback and preference rules from the owner, including example messages that the owner selects, are used to improve this triage for the owner.</p>
 <p>Hermes Gmail does not sell Google user data, does not use it for advertising, and does not use it to train generalized AI models.</p>
 <h2>Storage</h2>
 <p>The integration runs locally. On the owner's computer it stores:</p>

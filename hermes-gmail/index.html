@@ -13,7 +13,7 @@
 <li>When the owner asks, it can do a read-only review of selected older threads to calibrate its triage. Ordinary monitoring considers new email only.</li>
 </ul>
 <h2>Permissions</h2>
-<p>Hermes Gmail uses the Google <code>gmail.readonly</code> permission. Optional sending with the <code>gmail.send</code> permission is planned but is not yet enabled. If it is enabled, it will need separate Google consent, and each message will need the owner's approval of the exact recipients and content. It does not request permission to modify, label, archive, mark as read or delete mail, and it does not access Calendar or Drive.</p>
+<p>Hermes Gmail uses the Google <code>gmail.readonly</code> and <code>gmail.send</code> permissions, which the owner granted through Google consent. Mail monitoring and triage use read-only access and never send mail. Hermes Gmail sends a message or reply with <code>gmail.send</code> only after the owner approves the exact recipients and content of that message. It does not request permission to modify, label, archive, mark as read or delete mail, and it does not access Calendar or Drive.</p>
 <p>Selected message content is processed by the AI provider that the owner configured in Hermes, and selected summaries are delivered through Telegram. Details are in the privacy policy.</p>
 <p>This documentation site is static. It does not access Gmail and does not receive OAuth tokens or mail content from the integration.</p>
 <h2>Contact</h2>
